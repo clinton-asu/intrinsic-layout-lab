@@ -26,7 +26,9 @@ I used an intrinsic CSS Grid layout with `auto-fit` and `minmax()` so the guide 
 
 ### Breakpoint Decisions
 
-I chose the `50rem` breakpoint for the hero layout because it provides enough space for the text and card to sit comfortably in two columns. Below that width, they stack vertically to prevent the content from feeling cramped.
+- **50rem min-width (hero):** Switches the hero from a single column to two columns when there is enough space for the text and card to sit comfortably side by side.
+- **40rem min-width (feature card):** Switches the feature card from a single column to two columns when its container is wide enough.
+- **38rem max-width (feature card):** Adjusts the feature card's body padding in narrower containers to improve the visual alignment of the text beneath the image.
 
 ### AI Disclosure
 
